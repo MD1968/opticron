@@ -1,0 +1,81 @@
+.body {
+    font-family: 'Istok Web', sans-serif;
+}
+
+.icon{
+    height: 100px;
+    width: 100px;
+}
+
+
+.menu {
+  background: #ffffff;
+
+
+}
+
+.menu li {
+    background:  #ffffff;
+  }
+
+.top-bar {
+  background: #ffffff;
+  padding-right: 10%;
+}
+
+.menu-text {
+
+  background: #ffffff;
+  color: black;
+  
+
+}
+
+.bread {
+  background: #00a261;
+  padding-top: .4%;
+  padding-bottom: .4%;
+  color: white;
+}
+
+.hero-image {
+  background-image: url("https://www.opticron.co.uk/images/content/slider/79_1920x400.jpg"); width: 1068px;);
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.menu vertical {
+  background: #ffffff;
+
+}
+
+#footer {
+    background-color: darkgrey;
+    color: white;
+    padding-top: 4%;
+   }
+
+   .contact {
+       padding-left: 16%;
+   }
+
+   a:link {
+    color: #ccc;
+  }
+  /* visited link */
+  a:visited {
+    color: #ccc;
+  }
+  /* mouse over link */
+  a:hover {
+    color: #ccc;
+  }
+  /* selected link */
+  a:active {
+    color: #ccc;
+  }
