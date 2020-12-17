@@ -1,5 +1,18 @@
+/* Colours
+
+footer : #bbbdbf
+body: #ffffff
+
+
+*/
+
+
+
+/* Main body styling */
+
 .body {
     font-family: 'Istok Web', sans-serif;
+    background: #ffffff;
 }
 
 .icon{
@@ -7,9 +20,11 @@
     width: 100px;
 }
 
+/* Navbar styling */
 
 .menu {
   background: #ffffff;
+
 
 
 }
@@ -31,37 +46,77 @@
 
 }
 
-.bread {
-  background: #00a261;
-  padding-top: .4%;
-  padding-bottom: .4%;
-  color: white;
-}
 
-.hero-image {
-  background-image: url("https://www.opticron.co.uk/images/content/slider/79_1920x400.jpg"); width: 1068px;);
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.top-menu {
+  background: #ffffff;
 }
-
 
 .menu vertical {
   background: #ffffff;
-
 }
 
-#footer {
-    background-color: darkgrey;
-    color: white;
-    padding-top: 4%;
+
+
+/* footer */
+
+#footer-left {
+  padding-left: 15%;  
+  color: #ffffff;
+  padding-top: 2%;
+  background: #bbbdbf;
+  color: #ffffff;
+    }
+
+#footer-right {
+  background: #bbbdbf;
+  padding-top: 2%;
+  padding-left: 15%;  
+  padding-bottom: .5%;
    }
 
+
+#footer-right h2{
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 1px ;
+}
+
+#footer-right h1{
+  font-size: 30px;
+  color: #ffffff;
+  padding-bottom: 0.5%;
+}
+
+#footer-right  {
+  color: #ccc;
+}
+
+
+  .foot li {
+    background: #bbbdbf;
+  }
+
+
+
+  .small {
+    background: #bbbdbf;
+  }
+
+  .breadcrumbs {
+  
+    color: black;
+  }
+
    .contact {
-       padding-left: 16%;
+    padding-left: 16%;
+    background: #bbbdbf;
+
+   }
+
+   .social {
+    padding-left: 16%;
+    background: #bbbdbf;
+
    }
 
    a:link {
