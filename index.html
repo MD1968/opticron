@@ -8,20 +8,21 @@
     Binoculars Telescopes Monoculars - Smaller Lighter Brighter Sharper - Opticron | Opticron
     </title>
 
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&display=swap" rel="stylesheet">
 
-
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   
 
 <link rel="stylesheet" href="css/foundation.css" />
  
     <link rel="stylesheet" href="css/app.css">
    
-
 
     <script src="https://kit.fontawesome.com/f0f48d6faa.js" crossorigin="anonymous"></script>
 
@@ -40,40 +41,67 @@
          
   <!--------------- Navbar------------>
 
-
-  
-  <div class="title-bar" data-responsive-toggle="top-menu" style="background: white; color: black;">
-    <button class="menu-icon" type="button" data-toggle></button>
-    <div class="title-bar-title" style="background: white; color: black;">Menu</div>
+  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium" style="padding-left: 10%; color: black;">
+    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+    <div class="title-bar-title" style="padding-left: 10%; color: black;">Menu</div>
   </div>
-  <div class="top-bar" style="background: white; color: black;" id="top-menu">
-    <div class="top-bar-left" style="background: white; padding-left: 15%; color: black;">
-      <ul class="dropdown vertical medium-horizontal menu " style="background: white; color: black;">
-        <li><a href="#">Our Products</a></li>
-        <li><a href="#">News & Reviews</a></li>
-        <li><a href="#">Help & Support</a></li>
-        <li><a href="#">Where to buy</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">My Opticron</a></li>
+  
+  <div class="top-bar" id="example-menu" style="padding-left: 13%; color: black;">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+       
+        <li>
+          <a href="https://www.opticron.co.uk/our-products/binoculars">Binoculars
+          <ul class="menu vertical">
+            <li><a href="https://www.opticron.co.uk/our-products/compact-binoculars">Compact Binoculars</a></li>
+            <li><a href="https://www.opticron.co.uk/our-products/monoculars">Monoculars</a></li>
+            <li><a href="https://www.opticron.co.uk/our-products/rangefinders">Rangefinders</a></li>												
+            <li><a href="https://www.opticron.co.uk/our-products/fieldscopes">Fieldscopes</a></li>
+            <li><a href="https://www.opticron.co.uk/our-products/eyepieces">Eyepieces</a></li>
+            <li><a href="https://www.opticron.co.uk/our-products/telephotography-and-digiscoping">Telephotography and Digiscoping</a></li>
+            <li><a href="https://www.opticron.co.uk/our-products/tripods-and-mounts">Tripods and Mounts</a></li>
+            <li><a href="https://www.opticron.co.uk/our-products/cases">Cases</a></li>
+            <li><a href="https://www.opticron.co.uk/our-products/accessories">Accessories</a></li>
+            <li><a href="https://www.opticron.co.uk/our-products/magnifiers">Magnifiers</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.opticron.co.uk/news-reviews/news">News</a></li>
+        <li><a href="https://www.opticron.co.uk/news-reviews/reviews">Reviews</a></li>
+    
+      <li>
+        <a href="https://www.opticron.co.uk/our-products/binoculars">Help & Support
+        <ul class="menu vertical">
+          <li><a href="https://www.opticron.co.uk/help-support/service-repair">Service & Repair</a></li>										
+          <li><a href="https://www.opticron.co.uk/help-support/product-guarantees">Product Guarantees</a></li>
+          <li><a href="https://www.opticron.co.uk/help-support/register-product">Register Product</a></li>
+          <li><a href="https://www.opticron.co.uk/help-support/returning-a-product">Returning A Product</a></li>
+          <li><a href="https://www.opticron.co.uk/help-support/send-feedback">Send Feedback</a></li>
+          <li><a href="https://www.opticron.co.uk/help-support/how-to-videos">How To Videos</a></li>
+          <li><a href="https://www.opticron.co.uk/help-support/downloads">Downloads</a></li>
+        </ul>
+      </li>
+        <li><a href="https://www.opticron.co.uk/where-to-buy">Where To Buy</a></li>
+        <li><a href="https://www.opticron.co.uk/contact-us">Contact Us</a></li>
 
-      
-        <ul class="dropdown vertical medium-horizontal menu" style="background: white; padding-left: 10% ; ">
-
-
-        <input name="ctl00$txtSearch" type="text" id="txtSearch" style="width: 300px;">
-        <a id="btnSearch" href="javascript:__doPostBack(&#39;ctl00$btnSearch&#39;,&#39;&#39;)"><i class="fa fa-search"></i></a>
-      
-          
-
-
-
+        <li>
+          <a href="">My Opticron
+          <ul class="menu vertical">
+            <li><a href="https://www.opticron.co.uk/my-opticron/basket">Basket</a></li>
+            <li><a href="https://www.opticron.co.uk/my-opticron/forgot-password">Forgot Password</a></li>
+            <li><a href="https://www.opticron.co.uk/my-opticron/login?ReturnUrl=/">Login</a></li>
+            <li><a href="https://www.opticron.co.uk/my-opticron/create-account">Create Account</a></li>  
+          </ul>
+        </li>            
+        </li>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Search"></li>
+        <li><button type="button" class="button">Search</button></li>
       </ul>
     </div>
   </div>
-</div>
   
-
-
 <!---------------   Content ----------->
 
 <!----------------- Slider Top ------------>
@@ -170,115 +198,200 @@
       
           <p class="hidden-for-small-only" data-equalizer-watch>We publish as many product reviews as we can find from print and online media and from our product ambassadors. Some of the reviews included here are compiled by wildlife...</p>
 
-                                <a href="https://www.opticron.co.uk/news-reviews/reviews" class="button success"  style="width: 100%; background: #00a261;">More Info</a>
+            <a href="https://www.opticron.co.uk/news-reviews/reviews" class="button success"  style="width: 100%; background: #00a261;">More Info</a>
         </div>
       </div>
     </div>
   </div>
+</div>  
 </div>
-
-  
-</div>
-
-
 
 <!----------------- Products ------------>
 
-<center><h3 style="padding-top: 2%, font-size= 17px; padding-top: 2%;">Products</h3></center>
+    <center>
+      <h1>Products</h1>
+    </center>
+    <div class="slider owl-carousel">
 
+<!----------------- Card Start ------------>   
+  <div class="card" >
+    <div class="img" id="card-img">
+      <center>
+        <img src="images/products/3_330x330.jpg" alt="" style="height: 150px; width: 150px ;"> 
+      </center>
+        <div class="content">
+          <div class="title">
+            <center>
+              <a href="https://www.opticron.co.uk/our-products/binoculars"><h3>Binoculars</h3></a>
+            </center>
+          </div>
+        </div>
+      </div>
+  </div>
 
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-  <div class="orbit-wrapper">
-
-    <div class="orbit-controls">
-      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+    <center>
+      <img src="images/products/4_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+    </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/compact-binoculars"><h3>Compact Binoculars</h3></a>
+           </center>
+        </div>
+      </div>
     </div>
+</div>
 
-<!--  Slider 1-->
-    
-    <ul class="orbit-container">
-      <li class="is-active orbit-slide">
-        <figure class="orbit-figure" style="padding-left: 15%;">
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+    <center>
+      <img src="images/products/5_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+    </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/monoculars"><h3>Monoculars</h3></a>
+          </center>
+        </div>
+      </div>
+    </div>
+</div> 
 
-          <a href="https://www.opticron.co.uk/our-products/binoculars" title="Binoculars">
-            <img width="300" height="300" src="images/products/3_330x330.jpg" />
-        </a>
-      
-        <a href="https://www.opticron.co.uk/our-products/compact-binoculars" title="Compact Binoculars">
-          <img width="300" height="300" src="images/products/4_330x330.jpg" />
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+  <center>
+    <img src="images/products/368_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+  </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/rangefinders"><h3>Rangefinders</h3></a>
+          </center>
+        </div>
+      </div>
+    </div>
+</div> 
 
-           
-        <a href="https://www.opticron.co.uk/our-products/monoculars" title="Monoculars">
-          <img width="300" height="300" src="images/products/5_330x330.jpg" />
-      </a>
-      </a>
-      <a href="https://www.opticron.co.uk/our-products/rangefinders" title="Rangefinders">
-        <img width="300" height="300" src="images/products/368_330x330.jpg" />
-        </a>
-    
-        </figure>
-      </li>
-     
-<!--  Slider 2 -->
-     
-      <li class="orbit-slide">
-        <figure class="orbit-figure" style="padding-left: 15%;">
-     
-        </a>
-        <a href="https://www.opticron.co.uk/our-products/fieldscopes" title="Fieldscopes">
-          <img width="300" height="300" src="images/products/6_330x330.jpg" />
-      </a>
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+  <center>
+    <img src="images/products/6_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+  </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/fieldscopes"><h3>Fieldscopes</h3></a>
+          <h3></h3>
+          </center>
+        </div>
+      </div>
+    </div>
+</div> 
 
-        <a href="https://www.opticron.co.uk/our-products/eyepieces" title="Eyepieces">
-          <img width="300" height="300" src="images/products/7_330x330.jpg" />
-      </a>
-      <a href="https://www.opticron.co.uk/telephotography-and-digiscoping" title="Telephotography and Digiscoping">
-        <img width="300" height="300" src="images/products/8_330x330.jpg" />
-    </a>
-    <a href="https://www.opticron.co.uk/our-products/tripods-and-mounts" title="Tripods and Mounts">
-      <img width="300" height="300" src="images/products/9_330x330.jpg" />
-  </a>
-   
-        </figure>
-      </li>
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+  <center>
+    <img src="images/products/7_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+  </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/eyepieces"><h3>Eyepieces</h3></a>
+          </center>
+        </div>
+      </div>
+    </div>
+</div>
 
-<!--  Slider 3 -->
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+  <center>
+    <img src="images/products/8_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+  </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/telephotography-and-digiscoping"><h3>Telephotography and Digiscoping</h3></a>
+          </center>
+        </div>
+      </div>
+    </div>
+</div>
 
-      <li class="orbit-slide">
-        <figure class="orbit-figure" style="padding-left: 15%;">
-        
-          <a href="https://www.opticron.co.uk/our-products/cases" title="Cases">
-            <img width="300" height="300" src="images/products/10_330x330.jpg" />
-        </a>
-      
-        <a href="https://www.opticron.co.uk/our-products/accessories" title="Accessories">
-          <img width="300" height="300" src="images/products/11_330x330.jpg" />
-      </a>
-      <a href="https://www.opticron.co.uk/our-products/magnifiers" title="Magnifiers">
-        <img width="300" height="300" src="images/products/12_330x330.jpg" />
-    </a>
-    <a href="https://www.opticron.co.uk/our-products/binoculars" title="Binoculars">
-      <img width="300" height="300" src="images/products/3_330x330.jpg" />
-  </a>
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+    <center>
+      <img src="images/products/9_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+    </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/tripods-and-mounts"><h3>Tripods and Mounts</h3></a>
+          </center>
+        </div>
+      </div>
+    </div>
+</div>
 
-         
-        
-        </figure>
-        </li>
-     
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+    <center>
+      <img src="images/products/10_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+  </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/cases"><h3>Cases</h3></a>
+          </center>
+        </div>
+      </div>
+    </div>
+</div>
 
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+    <center>
+    <img src="images/products/11_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+  </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/aaccessories"><h3>Accessories</h3></a>
+          </center>
+        </div>
+      </div>
+    </div>
+</div>
 
+<!----------------- Card Start ------------>   
+<div class="card">
+  <div class="img">
+    <center>
+      <img src="images/products/12_330x330.jpg" alt="" style="height: 150px; width: 150px ;" >
+    </center>
+      <div class="content">
+        <div class="title">
+          <center>
+            <a href="https://www.opticron.co.uk/our-products/magnifiers"><h3>Magnifiers</h3></a>
+         </center>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
 
-
-
-  
-  
-
-<!--------------- Footer ------------>
-<footer>
+</div>
+<footer style="padding-top: 20%;">
   <div class="grid-x">
     <div class="cell small-6" id="footer-left">
       <p><strong>Opticron</strong> Unit 21, Titan Court, Laporte Way, Luton, Bedfordshire, LU4 8EF, UK<br>UK VAT registration number GB197550428</p>
@@ -293,13 +406,8 @@
       </div>
 
 <br>
+           <p class="small">© 2020 Opticron</p>
      
-
-      <p class="small">© 2020 Opticron</p>
-     
-
-
-
     </div>
     <div class="cell small-6" id="footer-right" >
       <h1>Call 01582 726522</h1>
@@ -313,21 +421,21 @@
         <li><a href="https://www.youtube.com/user/opticrontv" target="_blank"><i class="fa fa-youtube fa-3x" style="color: white;"></i></a></li>
         <li><a href="http://opticron.net/" target="_blank"><i class="fa fa-globe-europe fa-3x" style="color: white;"></i></li>
       </ul>
-
-
-
-
-
     </div>
   </div>
-
-
-
     </div>
   </div>
 
 </footer>
 
+<script>
+  $(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000, //2000ms = 2s;
+    autoplayHoverPause: true,
+  });
+</script>
 
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/what-input.js"></script>
